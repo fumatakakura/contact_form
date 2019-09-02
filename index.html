@@ -5,21 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>お問い合わせ</title>
+    
 </head>
 <body>
-    <h1>お問い合わせ情報入力</h1>
-    <form action="">
+    <h1 id="input">お問い合わせ情報入力</h1>
+    <form action="check.php" method="POST">
     <div>
         <label for="name">名前</label><br>
-        <input id="name" type="text">
+        <input id="name" type="text"  name="username">
     </div>
 
     <div>
         <label for="email">メールアドレス</label><br>
-        <input id="email" type="text">
+        <input id="email" type="text"  name="email">
+    </div>
+
+    <div>
+        <label for="content">お問い合わせ</label><br>
+        <textarea name="content"></textarea>
     </div>
 
     <input type="submit" value="送信">
     </form>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
